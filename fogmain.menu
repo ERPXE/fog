@@ -1,6 +1,6 @@
 LABEL FOG.REG
 MENU LABEL ^Quick Host Registration and Inventory
-KERNEL er/plugins/fog/kernel/bzImage
+KERNEL er/plugins/fog/kernel/bzimage
 INITRD er/plugins/fog/images/init.gz
 APPEND root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp mode=autoreg web=10.0.0.1/fog/ loglevel=4
 TEXT HELP
@@ -10,7 +10,7 @@ ENDTEXT
 
 LABEL FOG.REGINPUT
 MENU LABEL ^Perform Full Host Registration and Inventory
-KERNEL er/plugins/fog/kernel/bzImage
+KERNEL er/plugins/fog/kernel/bzimage
 INITRD er/plugins/fog/images/init.gz
 APPEND root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp mode=manreg web=10.0.0.1/fog/ loglevel=4
 TEXT HELP
@@ -21,7 +21,7 @@ ENDTEXT
 
 LABEL FOG.QUICKIMAGE
 MENU LABEL ^Quick Image
-KERNEL er/plugins/fog/kernel/bzImage
+KERNEL er/plugins/fog/kernel/bzimage
 INITRD er/plugins/fog/images/init.gz
 APPEND root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp mode=quickimage keymap= web=10.0.0.1/fog/ loglevel=4
 TEXT HELP
@@ -31,7 +31,7 @@ ENDTEXT
 
 LABEL FOG.SYSINFO
 MENU LABEL ^Client System Information
-KERNEL er/plugins/fog/kernel/bzImage
+KERNEL er/plugins/fog/kernel/bzimage
 INITRD er/plugins/fog/images/init.gz
 APPEND root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp mode=sysinfo loglevel=4
 TEXT HELP
@@ -41,7 +41,7 @@ ENDTEXT
 
 LABEL FOG.DEBUG
 MENU LABEL ^Debug Mode
-KERNEL er/plugins/fog/kernel/bzImage
+KERNEL er/plugins/fog/kernel/bzimage
 INITRD er/plugins/fog/images/init.gz
 APPEND root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp mode=onlydebug
 TEXT HELP

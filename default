@@ -22,7 +22,7 @@ LABEL fog.memtest
 	ENDTEXT
 \n
 LABEL fog.reg
-	kernel fog/kernel/bzImage
+	kernel fog/kernel/bzimage
 	append initrd=fog/images/init.gz root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp dns= mode=autoreg web=10.0.0.1/fog/ loglevel=4
 	MENU LABEL Quick Host Registration and Inventory
 	TEXT HELP
@@ -31,7 +31,7 @@ LABEL fog.reg
 	ENDTEXT
 \n
 LABEL fog.reginput
-	kernel fog/kernel/bzImage
+	kernel fog/kernel/bzimage
 	append initrd=fog/images/init.gz root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp dns= mode=manreg web=10.0.0.1/fog/ loglevel=4
 	MENU LABEL Perform Full Host Registration and Inventory
 	TEXT HELP
@@ -42,7 +42,7 @@ LABEL fog.reginput
 \n
 LABEL fog.quickimage
 	MENU PASSWD $1$0123456789
-	kernel fog/kernel/bzImage
+	kernel fog/kernel/bzimage
 	append initrd=fog/images/init.gz  root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp dns= mode=quickimage keymap= web=10.0.0.1/fog/ loglevel=4
 	MENU LABEL Quick Image
 	TEXT HELP
@@ -51,7 +51,7 @@ LABEL fog.quickimage
 	ENDTEXT	
 	
 LABEL fog.sysinfo
-	kernel fog/kernel/bzImage
+	kernel fog/kernel/bzimage
 	append initrd=fog/images/init.gz  root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp dns= mode=sysinfo loglevel=4
 	MENU LABEL Client System Information
 	TEXT HELP
@@ -61,7 +61,7 @@ LABEL fog.sysinfo
 \n
 LABEL fog.debug
 	MENU PASSWD $1$0123456789
-	kernel fog/kernel/bzImage
+	kernel fog/kernel/bzimage
 	append initrd=fog/images/init.gz  root=/dev/ram0 rw ramdisk_size=127000 ip=dhcp dns= mode=onlydebug
 	MENU LABEL Debug Mode
 	TEXT HELP
